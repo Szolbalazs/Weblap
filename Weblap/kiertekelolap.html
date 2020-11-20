@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stilus.css">
+     <title>A számítógép felépítése</title>
+    <script type="text/javascript" src="s.js"></script>
+    
+</head>
+<body>
+    
+    <div id="navbar" class="navbar-expand-sm bg-light"> 
+  <ul>
+      <img src="dszcmechwart-logo.png">
+	<li><a href="MainPage.html">Főoldal</a></li> 
+	<li><a href="forrasok.html">Források</a></li> 
+
+  </ul> 
+</div> 
+    
+
+
+    
+    <div class="atlatszo" style="color: darkgreen; height: 100%">
+  <h1 style="padding-top: 100px">Értékelőlap</h1>
+  <ul>
+      <div id="bevitel">
+      <label class="bevitel">Tartalom (max. 12 pont): </label><input type="number" max="12" min="0" id="tart" name="tart" required placeholder="0"><br>
+                    <label class="bevitel">Logikai Felépítés (max. 6 pont): </label><input type="number" max="6" min="0" id="log" name="log" required placeholder="0"><br>
+                    <label class="bevitel">Kifejezőkézség (max. 6 pont): </label><input type="number" max="6" min="0" id="kif" name="kif" required placeholder="0"><br>
+                    <label class="bevitel">Kommutatív képesség (max. 6 pont): </label><input type="number" max="6" min="0" id="kom" name="kom" required placeholder="0"><br>
+                    <button type="submit" class="button" onclick="csinal()">Eredmény:</button>
+      </div>
+      <div id="eredmeny">
+                    <label class="eredmeny">Összes pontszám: </label><label id="osszes"></label><br>
+                    <label class="eredmeny">Százalék: </label><label id="szaz"></label><br>
+                    <label class="eredmeny">Osztályzat: </label><label id="os"></label><br>
+        </div>        
+</ul>
+    </div>
+    <div class="lab">
+  <p>Készítette: Szöllősi Balázs</p>
+</div>
+     <script src="s.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>

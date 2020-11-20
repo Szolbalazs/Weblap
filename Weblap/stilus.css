@@ -1,0 +1,94 @@
+html, body {
+    height:100%;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 25px;
+    background: url('2.jpg') fixed;
+    background-size: 100%;
+}
+
+html {
+  
+    background-size: 100%;
+}
+
+
+div {
+    overflow: hidden;
+}
+
+
+p {
+    padding: 0 5%;
+}
+
+img {
+    box-shadow: 0px 0px 4px #000;
+}
+
+
+
+.feher {
+    background: #eeeeec;
+    padding: 0 5%;
+}
+
+.feher a {
+    color: #322bff;
+    text-decoration: underline;
+    transition: 500ms;
+}
+
+.feher a:hover {
+    color: #26a1ff;
+}
+
+.atlatszo {
+    background: rgba(255, 255, 255, .7);
+    padding: 0 5%;
+}
+.lab {
+    color: #eeeeec;
+    background: #010105;
+    padding: 0 5%;
+}
+
+
+.balra {
+    float: left;
+    margin: 2%;
+}
+.jobbra {
+    float: right;
+    margin 2%;
+    width: 40%;
+}
+
+
+#navbar{
+   position: fixed;
+    width: 100%;
+}
+
+#navbar ul { 
+	margin: 0; 
+	padding: 5px; 
+	list-style-type: none; 
+	text-align: center; 
+	background-color: rgb(255,255,120);
+	} 
+ 
+#navbar ul li {  
+	display: inline; 
+	} 
+ 
+#navbar ul li a { 
+	text-decoration: none; 
+	padding: .2em 1em; 
+	color: #fff; 
+	background-color: #000; 
+	} 
+ 
+#navbar ul li a:hover { 
+	color: #000; 
+	background-color: #fff; 
+	} 

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stilus.css">
+     <title>A számítógép felépítése</title>
+</head>
+<body>
+    
+    <div id="navbar" class="navbar-expand-sm bg-light"> 
+  <ul>
+      <img src="dszcmechwart-logo.png">
+	<li><a href="kiertekelolap.html">Értékelőlap</a></li> 
+	<li><a href="forrasok.html">Források</a></li> 
+  </ul> 
+</div> 
+    
+
+
+    <h1 style="font-size: 66px; color: blueviolet; height: 200px; text-align: center; padding-top: 100px">A számítógép felépítése</h1>
+ 
+
+
+
+
+<div class="feher">
+  <h1>Központi Feldolgozó Egység (CPU)</h1>
+  <img class="balra" src="cpu.jpg" />
+  <p> A számítógép agya a központi vezérlőegység <a href="https://hu.wikipedia.org/wiki/Central_processing_unit">(CPU: Central Precessing Unit)</a> . Két fő része a vezérlőegység <a href="https://en.wikipedia.org/wiki/Control_unit">(CU: Control Unit)</a>, ami a memóriában tárolt program dekódolását és végrehajtását végzi, valamint az aritmetikai és logikai egység <a href="https://hu.wikipedia.org/wiki/Aritmetikai-logikai_egység">(ALU: Arithmetical and Logical Unit)</a>, ami a számítási és logikai műveletek eredményének kiszámításáért felelős. A központi vezérlőegységet processzornak is nevezzük. Feladata a gép irányítása, a feldolgozási folyamatok vezérlése, az adatok feldolgozása, számítások elvégzése, a memóriában tárolt parancsok kiolvasása és végrehajtása, illetve az adatforgalom vezérlése. Az utasítások végrehajtásához a CPU átmeneti tárolóhelyeket, úgynevezett regisztereket használ, amelyek gyorsabban elérhetőek, mint a memória.</p>
+    <h1>A RAM</h1>
+  <img class="jobbra" src="ram.jpg" />
+  <p>A RAM (Random Acces Memory) véletlen elérésű írható és olvasható memória. A RAM az a memóriaterület, ahol a processzor a számítógéppel végzett munka során dolgozik. Ennek a memóriának a tartalmát tetszőleges sorrendben és időközönként kiolvashatjuk vagy megváltoztathatjuk. A RAM-ot más néven operatív tárnak is nevezzük. Minden bevitt adat először a RAM-ba íródik, és ott kerül feldolgozásra. Itt helyezkednek el és ezen a területen dolgoznak az aktuálisan működő programok is. A RAM azonban nem alkalmas adataink huzamosabb ideig való tárolására, mert működéséhez folyamatos áramellátásra van szükség.</p>
+</div>
+    <h1 style="text-align: center; color: midnightblue; font-size: 45px; background-color: brown; height: 50px">A RAM-ok fajtái</h1>
+
+<div class="atlatszo" style="color: darkgreen;">
+  <h1>FPM DRAM</h1>
+  <p>A legrégibb típus az FPM DRAM.
+Belsőleg bitek mátrixaként szervezett tömb, melyben külön címezzük a sort és az oszlopot és a megfelelő késleltetés után a bitmátrix adott cellájának tartalmát megkapjuk a kimeneten.</p>
+  <h2>EDO DRAM</h2>
+  <p>Az EDO DRAM megengedi a második memóriahivatkozás elkezdését mielőtt még az előző eredménye megjelenne a kimeneten.</p>
+  <h2>PROM, EPROM, EEPROM</h2>
+  <p>A PROM ugyanolyan mint a ROM azzal a különbséggel, hogy felhasználó írhatja be a tartalmát egyszerre. E vonalban a következő találmány az EPROM volt, amit nem csak írni, hanem törölni is lehetett. Itt a chip egy kvarcablakon keresztül pár percig tartó erős ultraviola sugárzás hatására minden bitet 1-be állít és a beprogramozást ismét el lehet végezni. Az EPROM-nál még fejlettebb az EEPROM, amit impulzusokkal lehet törölni ahelyett, hogy be kelljen tenni egy speciális kamrába és ultraviola sugárzásnak kelljen kitenni. Ráadásul az EEPROM-ot helyben lehet programozni, míg az EPROM-ot csak egy külön erre kifejlesztett EPROM-programozó készülékkel.</p>
+</div>
+    <div class="feher">
+  <h1>Az alaplap</h1>
+  <img class="balra" src="alaplap.jpg" />
+  <p> Az alaplap megszabja a felhasználható processzor(ok) típusát és sebességét, a bővítőkártyahelyek számát és fajtáját, a felhasználható memória típusát, az adott gép által kezelhető maximális memóriaméretet, a használható számítógépházat és tápegységet. Méretét legtöbbször az ATX (régebben az AT) szabvány szerint alakítják ki.</p><br>
+        <h1>Feladatai:</h1>
+        <ul>
+            <li>Memóriavezérlés: a memóriafrissítés, memóriához való hozzáférés kezelése</li>
+            <li>(E)IDE-vezérlő: a háttértárak illesztését és kezelését végzi</li>
+            <li>valós idejű óra, RTC (Real Time Clock)</li>
+            <li>DMA-vezérlő: a közvetlen memória-hozzáférést vezérlő áramkör. Segítségével egyes eszközök a processzor terhelése nélkül képesek elérni a fizikai memóriát.</li>
+            <li>Billentyűzetvezérlő, PS/2-es egérvezérlő, USB-portok</li>
+            <li>ACPI-vezérlő az energiatakarékos üzemmódok kezelésére</li>
+            <li>AGP illesztő vezérlése</li>
+            <li>CMOS memória kezelése</li>
+        </ul>
+    </div>
+    <div class="atlatszo" style="color: darkgreen;">
+  <h1>Háttértárak</h1>
+  <p>A háttértár olyan számítógépes hardverelem, mely nagy mennyiségű adatot képes tárolni, és azokat a számítógép kikapcsolása után is megőrzi. Erre azért van szükség, mert a számítógép műveleti memóriájában csak ideiglenesen lehet adatot tárolni, ennek tartalma a számítógép kikapcsolása után törlődik. A mai számítógépek legtöbbje digitális, azaz számokkal dolgozik, minden adatot (kép, hang, egyéb) számokká alakítva kap meg, így számokat dolgoz fel és azokat kell, hogy eltárolja. A tároló eszközök különböző elveken tárolják az adatokat:
+     
+    </p>
+        <img class="balra" style="width: 20%;" src="hdd.jpg">
+        <ul>
+            <li>mechanikusan</li>
+            <li>mágnesesen</li>
+            <li>elektronikusan</li>
+            <li>optikailag</li>
+            
+        </ul>
+    </div>
+<div class="lab">
+  <p>Készítette: Szöllősi Balázs</p>
+</div>
+    <script src="s.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
